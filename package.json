@@ -1,14 +1,13 @@
 {
-  "name": "mon-backend",
+  "name": "express-crud",
   "version": "1.0.0",
+  "description": "Un projet CRUD avec Express.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "express": "^4.21.2"
   }
