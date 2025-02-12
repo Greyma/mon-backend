@@ -24,9 +24,9 @@ let currentGroups = [];
 
 // Données temporaires (simulant une base de données)
 let data = [
-    { id: "a1b2c3", name: "ggg", nickname: "eeet", modifier: 1 },
-    { id: "d4e5f6", name: "ggg", nickname: "tttt", modifier: 1 },
-    { id: "g7h8i9", name: "ggg", nickname: "etete", modifier: 1 },
+    { id: "a1b2c3", name: "", nickname: "", modifier: 0 },
+    { id: "d4e5f6", name: "", nickname: "", modifier: 0 },
+    { id: "g7h8i9", name: "", nickname: "", modifier: 0 },
     { id: "j0k1l2", name: "", nickname: "", modifier: 0 },
     { id: "m3n4o5", name: "", nickname: "", modifier: 0 },
     { id: "p6q7r8", name: "", nickname: "", modifier: 0 },
@@ -137,6 +137,11 @@ app.post('/create-groups', (req, res) => {
 // Ajouter une route pour récupérer les groupes
 app.get('/groups', (req, res) => {
     res.json(currentGroups);
+});
+
+app.get('/data', (req, res) => {
+    io.emit('dataUpdated', data);
+    res.json(data);
 });
 
 // Modifier la route PUT pour gérer le modifier
