@@ -140,7 +140,6 @@ app.get('/groups', (req, res) => {
 });
 
 app.get('/data', (req, res) => {
-    io.emit('dataUpdated', data);
     res.json(data);
 });
 
