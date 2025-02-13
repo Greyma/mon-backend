@@ -9,10 +9,10 @@ const app = express();
 const port = 3030;
 const server = createServer(app);
 const io = new Server(server, {
-  cors: {
-    origin: "https://bootcamp-i-a.vercel.app/",
-    methods: ["GET", "POST", "PUT"]
-  }
+    cors: {
+        origin: "*",
+        methods: ["GET", "POST", "PUT"]
+    }
 });
 
 app.use(cors());
