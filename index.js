@@ -160,10 +160,9 @@ app.put('/items/:id', (req, res) => {
     if (isEligibleNow) {
         data[index].modifier = 1 ;
         inscriptionCount++;
-        io.emit('dataUpdated', data);
         io.emit('updateCount', inscriptionCount);
     }
-
+    io.emit('dataUpdated', data);
     res.json(data[index]);
 });
 
