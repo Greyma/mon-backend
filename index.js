@@ -34,9 +34,9 @@ let participants = Array.from({ length: 50 }, (_, i) => ({
 
 // Données pour les enseignants et groupes d'évaluation
 let teachers = [
-  { id: 'PROF_AI_2024_1', name: 'Dr. Smith' },
-  { id: 'PROF_AI_2024_2', name: 'Pr. Johnson' },
-  { id: 'PROF_AI_2024_3', name: 'Mme. Dupont' },
+  { id: 'PROF1', name: 'Dr. Smith' },
+  { id: 'PROF2', name: 'Pr. Johnson' },
+  { id: 'PROF3', name: 'Mme. Dupont' },
 ];
 
 let evaluationGroups = [
@@ -44,7 +44,7 @@ let evaluationGroups = [
   { id: '2', name: 'Groupe beta', evaluations: [], average: 0, mention: '' },
   { id: '3', name: 'Groupe Theta', evaluations: [], average: 0, mention: '' },
   { id: '4', name: 'Groupe Gamma', evaluations: [], average: 0, mention: '' },
-  { id: '5', name: 'Groupe Theta', evaluations: [], average: 0, mention: '' },
+  { id: '5', name: 'Groupe Mosku', evaluations: [], average: 0, mention: '' },
   { id: '6', name: 'Groupe Tokyo', evaluations: [], average: 0, mention: '' },
   
   { id: '7', name: 'Groupe Finland', evaluations: [], average: 0, mention: '' },
