@@ -44,6 +44,14 @@ let evaluationGroups = [
   { id: '2', name: 'Groupe beta', evaluations: [], average: 0, mention: '' },
   { id: '3', name: 'Groupe Theta', evaluations: [], average: 0, mention: '' },
   { id: '4', name: 'Groupe Gamma', evaluations: [], average: 0, mention: '' },
+  { id: '5', name: 'Groupe Theta', evaluations: [], average: 0, mention: '' },
+  { id: '6', name: 'Groupe Tokyo', evaluations: [], average: 0, mention: '' },
+  
+  { id: '7', name: 'Groupe Finland', evaluations: [], average: 0, mention: '' },
+  { id: '8', name: 'Groupe Alger', evaluations: [], average: 0, mention: '' },
+  
+  { id: '9', name: 'Groupe hong kong', evaluations: [], average: 0, mention: '' },
+  { id: '10', name: 'Groupe berlin', evaluations: [], average: 0, mention: '' },
 ];
 
 const criteriaConfig = [
